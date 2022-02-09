@@ -35,3 +35,20 @@ document.getElementById("firstname").innerHTML = document.getElementById("firstn
 document.getElementById("lastname").innerHTML = document.getElementById("lastname-input").value;
 
 document.getElementById("age").innerHTML = document.getElementById("age-input").value;
+
+/*
+5. setAttribute & style - Ominaisuuksien vaihtaminen
+Vaihdetaan sitten elementin attribuutin arvoa. Muuta allaoleva linkki ohjaamaan SeAMK:n sivulle.
+
+Vaihda linkin fontin väriksi musta, taustaväriksi punainen ja lihavoi fontti.
+*/
+
+document.getElementById("box").href = "http://www.oamk.fi";
+// Fontin väriksi musta
+document.getElementById("box").style.color = "black";
+// Taustaväriksi punainen
+document.getElementById("box").style.backgroundColor = "red";
+// Lihavoi fontti
+document.getElementById("box").style.fontWeight = "bold";
+
+document.getElementById("box").setAttribute("style", "color: black; background-color: red; font-weight: bold;" );
