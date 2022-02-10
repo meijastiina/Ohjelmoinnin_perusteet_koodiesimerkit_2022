@@ -52,3 +52,8 @@ document.getElementById("box").style.backgroundColor = "red";
 document.getElementById("box").style.fontWeight = "bold";
 
 document.getElementById("box").setAttribute("style", "color: black; background-color: red; font-weight: bold;" );
+
+// Luo muuttuja age ja aseta sen arvoksi 5
+let age = 5;
+// Aseta muuttujan age arvo HTML-elementtiin
+document.getElementById("age").innerHTML = age;
