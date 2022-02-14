@@ -36,32 +36,13 @@ function t03() {
 }
 
 function t04() {
-    let number1 = Number (document.getElementById("number1").value);
-    let number2 = Number (document.getElementById("number2").value);
-    document.getElementById("d1").innerHTML = number1;
-    document.getElementById("d2").innerHTML = number2;
-    let number3 = number1 + number2;
-    document.getElementById("d3").innerHTML = number3;
-
-    document.getElementById("d4").innerHTML = number1;
-    document.getElementById("d5").innerHTML = number2;
-    let number3 = number1 - number2;
-    document.getElementById("d6").innerHTML = number3;
-
-    document.getElementById("d7").innerHTML = number1;
-    document.getElementById("d8").innerHTML = number2;
-    let number3 = number1 * number2;
-    document.getElementById("d9").innerHTML = number3;
-
-    document.getElementById("d10").innerHTML = number1;
-    document.getElementById("d11").innerHTML = number2;
-    let number3 = number1 / number2;
-    document.getElementById("d12").innerHTML = number3;
-
-    document.getElementById("d13").innerHTML = number1;
-    document.getElementById("d14").innerHTML = number2;
-    let number3 = number1 % number2;
-    document.getElementById("d15").innerHTML = number3;
+    // Yhteenlasku
+    // Laita input-kenttien arvot tuonne operandeiksi 
+    document.getElementById("d1").innerHTML = Number(document.getElementById("number1").value);
+    document.getElementById("d2").innerHTML = Number(document.getElementById("number2").value);
+    // Laske summa
+    // Laita summa näkyville
+    document.getElementById("d3").innerHTML = Number(document.getElementById("number1").value) + Number(document.getElementById("number2").value);
 }
 
 
