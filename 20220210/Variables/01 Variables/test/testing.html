@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables and calculations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">         
+        <meta content="Liisa Auer" name="author">
+        <!-- licenced: CC-BY-4.0; https://creativecommons.org/licenses/by/4.0/ --> 
+        <meta name="description" content="Unit testing for programming exercises">        
+
+    </head>
+    <body>
+        <div id="page" style="display: none;">
+        <!-- <div id="page"> -->
+            <h1>Variables and calculations</h1>
+            <div>
+                <section>
+                    <h2>T1: Read and print</h2> 
+                    <label for="name" class="long">Your name:</label><br>
+                    <input type="text" id="name" />
+
+                    <button onclick="t01()">Read and print</button>                
+                    <p>Welcome to study programming, <span id="welcome"></span></p>
+                </section>
+
+                <section>
+                    <h2>T2: Seconds in year</h2>                    
+                    <button onclick="t02()">Seconds in year</button>
+                    <p><span id="seconds">0</span> seconds in a year</p>
+                </section>                        
+
+                <section>
+                    <h2>T3: Average</h2>
+                    <label for="first">Number 1:</label><input type="number" id="first" />
+                    <label for="second">Number 2:</label><input type="number" id="second" />
+                    <label for="third">Number 3:</label><input type="number" id="third" />              
+
+                    <button onclick="t03()">Average</button>
+                    <p>Average is: <span id="average"></span></p>
+                </section> 
+
+                <section>
+                    <h2>T4: Calculation</h2>
+                    <label for="number1">Number 1:</label><input type="number" id="number1" />
+                    <label for="number2">Number 2:</label><input type="number" id="number2" />
+
+                    <button onclick="t04()">Calculation</button>    
+                    <p>
+                        <span id="d1">0</span> + <span id="d2">0</span> = <span id="d3">0</span><br>
+                        <span id="d4">0</span> - <span id="d5">0</span> = <span id="d6">0</span><br>
+                        <span id="d7">0</span> * <span id="d8">0</span> = <span id="d9">0</span><br>
+                        <span id="d10">0</span> / <span id="d11">0</span> = <span id="d12">0</span><br>
+                        <span id="d13">0</span> % <span id="d14">0</span> = <span id="d15">0</span>
+                    </p>                
+                </section>
+
+            </div>
+
+            <div >
+
+                <section>
+                    <h2>T5: Discount</h2>
+                    <label for="price" class="long">Hinta:</label>
+                    <input type="number" id="price" />
+
+                    <label for="percent" class="long">Discount-%:</label>
+                    <input type="number" id="percent" />                    
+
+                    <button onclick="t05()">New price</button>                
+                    <p>New price is <span id="newprice"></span></p>                
+                </section>                        
+
+                <section>
+                    <h2>T6: Age</h2>
+                    <label for="year" class="long">Birth year:</label>
+                    <input type="number" id="year" step="1" />   
+
+                    <button onclick="t06()">Age</button>    
+                    <p>You are <span id="age"></span> years of age.</p>                
+                </section>          
+
+                <section>
+                    <h2>T7: Seats</h2>
+                    <label for="seats">Seats</label>
+                    <input type="number" id="seats" step="1"/>
+
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" step="1" />
+
+                    <button onclick="t07()">Seat availability</button>
+                    <p>Remaining number of seats <span id="remaining"></span></p>
+                </section>    
+
+                <section>
+                    <h2>T8: Plants</h2>
+                    <label for="plants" class="pitka">Plants:</label>
+                    <input type="number" id="plants" step="1"/><br>
+                    
+                    <label for="distance" class="pitka">Distance:</label>
+                    <input type="number" id="distance" step="1"/>
+                    
+                    <button onclick="t08()">Hedgerow</button>
+                    <p>Length of hedgerow is <span id="length_cm"></span> cm<br>
+                    Length of hedgerow is <span id="length_m"></span> m</p>
+                </section>    
+
+                <section>
+                    <h2>T9: Shopping list</h2>
+                    <label for="participant" class="long">Guests: </label>
+                    <input type="number" id="participant" step="1" />
+
+                    <button onclick="t09()">Shopping list</button>
+                    <p>Sausages <span id="sausages"></span> pcs<br>
+                       Drinks <span id="drinks"></span> bottles<br>
+                       Tomatoes <span id="tomatoes"></span> pcs<br>
+                       Eggs <span id="eggs"></span> pcs<br>
+                    </p>
+                </section>                
+            </div>
+        </div>	
+
+        <div>
+                <p id="nimix"></p>
+        </div> 
+        
+        <script src="../public_html/js/variables.js"></script>        	
+        
+        <script src="lib/jquery-3.4.1.min.js"></script>        
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+        
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/variables_tests.js"></script>        
+
+    </body>
+</html>
+
