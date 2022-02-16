@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+footer {
+    margin: 2em auto;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #3179B2;
+    padding-top: 2em;
+    color: #3179B2;
+    bottom: 0;
+}
+hr {
+    border: 1px solid #D4342D;
+    margin: 20px 0;
+    clear: both;
+}
+table, th, td {
+    border: 1px solid #3179B2;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 1em;
+}
+.logo {
+    float: left;
+    margin: 0 50px 50px 0;
+    height: 150px;
+}
+a {
+    color: #D4342D;
+    text-decoration: none;
+}
+p, body {
+    color: #3179B2;
+}
+h1, h2, h3{
+    color: #D4342D;
+    text-shadow: 1px 1px 1px #3179B2;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1em;
+}
+.toggle {
+    cursor: pointer;
+}
+.bordered {
+    border: 1px solid #3179B2;
+    padding: 10px;
+    margin: 10px 0;
+}
+.hidden {
+    display: none;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+input[type="number"] {
+    width: 3em;
+    text-align: right;
+}
+.left-margin {
+    margin-left: 1em;
+}
+.togglable-content {
+    display: none;
+}
+header {
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #3179B2;
+    padding-bottom: 2em;
+}
+header h1 {
+    font-size: 250%;
+}
+header img {
+    float: left;
+    height: 85px;
+    margin-right: 50px;
+}
+.code {
+    font-family: 'Courier New', Courier, monospace;
+}
+.red-border {
+    border: 1px solid red;
+}

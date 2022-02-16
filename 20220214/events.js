@@ -10,3 +10,8 @@ document.getElementById("textarea-element").onmouseout = function() {
 }
 // Once a value is entered in textarea, show a text "Contents of textarea: [contents]" in span.
 // Once button is pressed, increment the value in p by the value in input.
+
+let testielementit = document.getElementsByClassName("test");
+document.write(testielementit[1].innerHTML);
+
+document.getElementById("button-element").style.display = "none";
