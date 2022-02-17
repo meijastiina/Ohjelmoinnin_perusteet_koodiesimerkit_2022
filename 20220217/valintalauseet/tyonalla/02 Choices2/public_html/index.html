@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classification</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" >
+        <meta content="Liisa Auer" name="author">
+        <meta name="description" content="Programming exercises">        
+    </head>
+    <body>
+        <main id="page">
+            <h1>Classification</h1>
+            <div class="palsta">
+                <section>
+                    <h2>V10: Grades</h2>
+                    <div>
+                        <label for="points">Points:</label>
+                        <input type="number" id="points" step="1" >
+                    </div>
+                    <button type="button" onclick="v10()">Grade</button>
+                    <p id="grade">&nbsp;</p> 
+                    <p id="grade_error" class="error"></p>
+                </section>
+                <section>
+                    <h2>V11: Clock</h2>
+                    <div>
+                        <label for="clock">Hours:</label>
+                        <input type="number" id="clock" step="1" >
+                    </div>
+                    <button type="button" onclick="v11()">Say greeting</button>
+                    <p id="greeting">&nbsp;</p>
+                    <p id="clock_error" class="error"></p>
+                </section>                
+
+                <section>
+                    <h2>V12: Shopping list</h2>
+                    <div>
+                        <label for="guests">Guests:</label>
+                        <input type="number" id="guests" step="1" >
+                    </div>
+                    <button type="button" onclick="v12()">Shopping list</button>
+                    <p id="shopping_list">&nbsp;</p>
+                    <p id="address">&nbsp;</p>
+                    <p id="party_error" class="error"></p>
+                </section>
+            </div>
+            <div class="palsta">
+                <section>
+                    <h2>V13: Quiz prize</h2>
+                    <div>
+                        <label for="amount" class="long">Number of questions:</label>
+                        <input type="number" id="amount" step="1" >                    
+                    </div>
+                    <div>
+                        <label for="amount" class="long">Right answers: </label>
+                        <input type="number" id="right" step="1" >                                        
+                    </div>
+                    <button type="button" onclick="v13()">Result</button>
+                    <p id="result">&nbsp;</p>
+                    <p id="quiz_error" class="error"></p>
+                </section>
+            </div>
+            <div>
+                <p>Liisa Auer, Oulu University of Applied Sciences, 
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a></p>
+            </div>            
+        </main>
+        <script src="js/classification.js"></script>
+    </body>
+</html>

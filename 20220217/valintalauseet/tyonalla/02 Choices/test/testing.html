@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sivun nimi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/tyylit.css" >	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">        
+
+    </head>
+    <body>
+        <div id="page" style="display: none;">
+            <h1>Choices exercises</h1>
+            <div class="palsta">
+ 
+                <section>
+                    <h2>V1: Going in</h2> 
+                    <label for="year">Birth year:</label><input type="number" id="year" >
+                    <button onclick="v01()">Going in</button>
+                    <p id="allow">&nbsp;</p>                
+                </section>
+
+                <section>
+                    <h2>V2 ja V3: Numbers</h2> 
+                    <label for="number1">Number 1:</label><input type="number" id="number1" >
+                    <label for="number2">Number 2:</label><input type="number" id="number2" >
+                    <button onclick="v02()">Smaller number</button>
+                    <button onclick="v03()">Negative</button>
+                    <p>Smaller number is <span id="smaller"></span></p>
+                    <p id="negative"></p>
+                </section>
+                
+                <section>
+                    <h2>V4: Square or rectangle</h2> 
+                    <label for="side1">Side 1:</label><input type="number" id="side1" >
+                    <label for="side2">Side 2:</label><input type="number" id="side2" >
+                    <button onclick="v04()">Square</button>
+                    <p id="square">&nbsp;</p>                
+                </section>                
+                
+
+            </div>
+            <div class="palsta">
+                <section>
+                    <h2>V5: Even or odd</h2>
+                    <h2>V6: Positive or negative</h2>
+                    <label for="number3">Number:</label><input type="number" id="number3" >
+                    <button onclick="v05()">Ever or odd</button>
+                    <button onclick="v06()">Positive or negative</button>
+                    <p id="even">&nbsp;</p>
+                    <p id="positive">&nbsp;</p>
+                </section>
+
+                <section>
+                    <h2>V7: Smallest</h2> 
+                    <label for="digit_a">A:</label><input type="number" id="digit_a" >
+                    <label for="digit_b">B:</label><input type="number" id="digit_b" >
+                    <label for="digit_c">C:</label><input type="number" id="digit_c" >
+                    <label for="digit_d">D:</label><input type="number" id="digit_d" >
+                    <button onclick="v07()">Smallest</button>
+                    <p>Smallest number is <span id="smallest"></span></p>
+                    <p>Biggest number is <span id="biggest"></span></p>
+                </section> 
+
+                <section>
+                    <h2>V8: Leap Year</h2> 
+                    <label for="yearx">Year</label><input type="number" id="yearx" >
+                    <button onclick="v08()">Leap year</button>
+                    <p id="leap_year">&nbsp;</p>                
+                </section>
+            </div>
+
+            <div class="palsta">
+                <section>
+                    <h2>V9: Images</h2>
+                    <div>
+                        <label for="number4">Number:</label>
+                        <input type="number" id="number4" >
+                    </div>
+                    <button type="button" onclick="v09()">Flower</button>
+                    <p id="flower">&nbsp;</p>
+                </section>
+            </div>
+        </div>
+        <div>
+                <p id="nimix"></p>
+        </div> 
+        
+        <script src="../public_html/js/choices.js"></script>        	
+        <script src="lib/jquery-3.4.1.min.js" type="text/javascript"></script>
+        
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+        
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/choices_tests.js"></script>        
+
+    </body>
+</html>
+

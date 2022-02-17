@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Choices exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" >   
+        <meta content="Liisa Auer" name="author">
+        <meta name="description" content="Programming exercises">        
+    </head>
+    <body>
+        <main id="page">
+            <h1>Choices exercises</h1>
+            <div class="palsta">
+
+                <section>
+                    <h2>V1: Going in</h2> 
+                    <div>
+                        <label for="year">Birth year:</label>
+                        <input type="number" id="year" >
+                    </div>
+                    <button type="button" onclick="v01()">Going in</button>
+                    <p id="allow">&nbsp;</p>                
+                </section>
+
+                <section>
+                    <h2>V2 and V3: Numbers</h2> 
+                    <div>
+                        <label for="number1">Number 1:</label>
+                        <input type="number" id="number1" >
+                    </div>
+                    <div>
+                        <label for="number2">Number 2:</label>
+                        <input type="number" id="number2" >
+                    </div>
+                    <button type="button" onclick="v02()">Smaller number</button>
+                    <button type="button" onclick="v03()">Negative</button>
+                    <p>Smaller number is <span id="smaller"></span></p>
+                    <p id="negative"></p>
+                </section>
+
+                <section>
+                    <h2>V4: Square or rectangle</h2> 
+                    <div>
+                        <label for="side1">Side 1:</label>
+                        <input type="number" id="side1" >
+                    </div>
+                    <div>
+                        <label for="side2">Side 2:</label>
+                        <input type="number" id="side2" >
+                    </div>
+                    <button type="button" onclick="v04()">Square</button>
+                    <p id="square">&nbsp;</p>                
+                </section>                
+
+
+            </div>
+            <div class="palsta">
+                <section>
+                    <h2>V5: Even or odd</h2>
+                    <h2>V6: Positive or negative</h2>
+                    <div>
+                        <label for="number3">Number:</label>
+                        <input type="number" id="number3" >
+                    </div>
+                    <button type="button" onclick="v05()">Ever or odd</button>
+                    <button type="button" onclick="v06()">Positive or negative</button>
+                    <p id="even">&nbsp;</p>
+                    <p id="positive">&nbsp;</p>
+                </section>
+
+                <section>
+                    <h2>V7: Smallest and biggest</h2> 
+                    <div>
+                        <label for="digit_a">A:</label>
+                        <input type="number" id="digit_a" >
+                    </div>
+                    <div>
+                        <label for="digit_b">B:</label>
+                        <input type="number" id="digit_b" >
+                    </div>
+                    <div>
+                        <label for="digit_c">C:</label>
+                        <input type="number" id="digit_c" >
+                    </div>
+                    <div>
+                        <label for="digit_d">D:</label>
+                        <input type="number" id="digit_d" >
+                    </div>
+                    <button type="button" onclick="v07()">Smallest</button>
+                    <p>Smallest number is <span id="smallest"></span></p>
+                    <p>Biggest number is <span id="biggest"></span></p>
+                </section> 
+
+                <section>
+                    <h2>V8: Leap Year</h2> 
+                    <div>                    
+                        <label for="yearx">Year</label>
+                        <input type="number" id="yearx" >
+                    </div>                    
+                    <button type="button" onclick="v08()">Leap year</button>
+                    <p id="leap_year">&nbsp;</p>                
+                </section>
+            </div>
+            
+            <div class="palsta">
+                <section>
+                    <h2>V9: Images</h2>
+                    <div>
+                        <label for="number4">Number:</label>
+                        <input type="number" id="number4" >
+                    </div>
+                    <button type="button" onclick="v09()">Flower</button>
+                    <p id="flower">&nbsp;</p>
+                </section>
+            </div>
+            <div>
+                <p>Liisa Auer, Oulu University of Applied Sciences, 
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a></p>
+            </div>            
+        </main>>
+        <script src="js/choices.js"></script>
+
+    </body>
+</html>
