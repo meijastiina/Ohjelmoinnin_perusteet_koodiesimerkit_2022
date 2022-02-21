@@ -1,9 +1,14 @@
 // Haetaan tulostuselementti DOM:sta muuttujaan, jotta DOM-hakuja ei tarvitse tehdä useampia
 let resultElement = document.getElementById("resultElement");
+
 // Käsitellään painikkeen klikkaus
 document.getElementById("testButton").onclick = function() {
+    // Haetaan input-kenttien arvot muuttujiin
+    let inputElement1Value = document.getElementById("inputElement1").value;
+    let inputElement2Value = document.getElementById("inputElement2").value;
+    let inputElement3Value = document.getElementById("inputElement3").value;
     /**
-     * MATH
+     * MATH & NUMBER
      * 
      * 
      *  */ 
@@ -11,7 +16,7 @@ document.getElementById("testButton").onclick = function() {
     // PI
 
 
-    // round(), ceil(), floor()
+    // round(), ceil(), floor(), toFixed()
 
     // min(), max()
 
