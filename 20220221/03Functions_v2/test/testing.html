@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/tyylit.css" />	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">        
+        <meta content="Liisa Auer" name="author">
+        <!-- licenced: CC-BY-4.0; https://creativecommons.org/licenses/by/4.0/ --> 
+        <meta name="description" content="Unit testing for programming exercises"> 
+    </head>
+    <body>
+        <div id="page" style="display: none;">
+            <h1>Some mathematics</h1>
+            <div>                
+                <section>
+                    <h2>F1: Circle</h2> 
+                    <label for="radius1">Radius:</label><input type="number" id="radius1" />
+
+                    <button onclick="f01()">Circle</button>
+                    <p>Circle around: <span id="c_around"></span><br>
+                        Circle area: <span id="c_area"></span></p>                
+                </section>
+
+                <section>
+                    <h2>F2: Triangle</h2>
+                    <label for="side">Side: </label><input type="number" id="side" />
+                    <label for="bottom">Bottom:</label><input type="number" id="bottom" /> 
+
+                    <button onclick="f02()">Triangle</button>
+                    <p>Triangle height: <span id="t_height"></span><br>
+                        Triangle around: <span id="t_around"></span><br>
+                        Triangle area: <span id="t_area"></span></p>                
+                </section>
+
+                <section>
+                    <h2>F3: Circle 2</h2> 
+                    <label for="radius2">Radius:</label><input type="number" id="radius2" />
+
+                    <button onclick="f03()">Circle 2</button>
+                    <p id="circle"></p>                
+                </section>
+
+                <section>
+                    <h2>F4: Square</h2> 
+                    <label for="side2">Side:</label><input type="number" id="side2" />
+
+                    <button onclick="f04()">Square</button>
+                    <p id="square"></p>                
+                </section>
+                
+                <section>
+                    <h2>F5: Circle or Square</h2> 
+                    <label><input type="radio" name="shape" value="1" checked="checked"
+                         onclick="shape(1)">Circle</label>
+                    <label><input type="radio" name="shape" value="2"
+                         onclick="shape(2)">Square</label>
+                    <label for="amount" class="long">Radius/Side:</label><input type="number" id="amount" />
+
+                    <button onclick="f05()">Calculate</button>
+                    <p id="result"></p>                
+                </section>                
+
+            </div>
+
+            <h1>Random numbers</h1>  
+            <div>
+                <section>
+                    <h2>F6: Dice</h2> 
+                    <button onclick="f06()">Throw dice</button>
+                    <p id="dice"></p>
+                </section>
+
+                <section>
+                    <h2>F7: Random numbers</h2>
+                    <label for="min">Min:</label><input type="number" id="min" />
+                    <label for="max">Max:</label><input type="number" id="max" />
+
+                    <button onclick="f07()">Random numbers</button>    
+                    <p id="randoms"></p>
+                </section>                
+            </div>
+
+            <h1>Challenge</h1>
+            <div>
+                <section>
+                    <h2>F8: User id</h2> 
+                    <label for="firstName" class="extra_long">First name:</label>
+                        <input id="firstName" class="extra_long">
+                    <label for="lastName" class="extra_long">Last name:</label>
+                        <input id="lastName" class="extra_long">
+                    <button onclick="f08()">User id and password</button>
+                    <p>User id: <span id="userid"></span></p> 
+                    <p>Password: <span id="password"></span></p> 
+                </section>
+
+                <section>
+                    <h2>F9: Check input data</h2>
+                    <div>
+                        <label for="dd">Birthday: </label><br>
+                        <input id="dd" type="number" class="small">.
+                        <input id="mm" type="number" class="small">.
+                        <input id="yy" type="number">
+                    </div>
+
+                    <button type="button" onclick="f09()">Check</button>
+                    <p id="check_error" class="error"></p>
+                    <p id="check_result"></p>
+                </section>                 
+            </div>
+
+        </div>
+        <div>
+                <p id="nimix"></p>
+        </div> 
+        
+        <script src="../public_html/js/functions.js"></script>        	
+        
+        <script src="lib/jquery-3.4.1.min.js"></script>
+        
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+        
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/functions_tests.js"></script>        
+
+    </body>
+</html>
+
