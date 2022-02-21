@@ -1,7 +1,7 @@
 // Haetaan tulostuselementti DOM:sta muuttujaan, jotta DOM-hakuja ei tarvitse tehdä useampia
 let resultElement = document.getElementById("resultElement");
 
-function printMathExamples() {
+function printMathExamples(number1, number2, number3) {
     /**
      * MATH & NUMBER
      * 
@@ -12,7 +12,7 @@ function printMathExamples() {
     resultElement.innerHTML = "Piin arvo on: " + Math.PI;
 
     // round(), ceil(), floor(), toFixed()
-    let luku = Number(inputElement1Value);
+    let luku = Number(number1);
     resultElement.innerHTML += "<br>Luku on " + luku;
     resultElement.innerHTML += "<br>Luku " + luku + " pyöristettynä round()-funktiolla on " + Math.round(luku);
     resultElement.innerHTML += "<br>Luku " + luku + " pyöristettynä ceil()-funktiolla on " + Math.ceil(luku);
@@ -20,8 +20,8 @@ function printMathExamples() {
     resultElement.innerHTML += "<br>Luku " + luku + " pyöristettynä toFixed()-funktiolla kahteen desimaaliin on " + luku.toFixed(2);
 
     // min(), max()
-    resultElement.innerHTML += "<br>Luvuista " + inputElement1Value + ", " + inputElement2Value + " ja " + inputElement3Value + " pienin on " + Math.min(inputElement1Value, inputElement2Value, inputElement3Value);
-    resultElement.innerHTML += "<br>Luvuista " + inputElement1Value + ", " + inputElement2Value + " ja " + inputElement3Value + " suurin on " + Math.max(inputElement1Value, inputElement2Value, inputElement3Value);
+    resultElement.innerHTML += "<br>Luvuista " + number1 + ", " + number2 + " ja " + number3 + " pienin on " + Math.min(number1, number2, number3);
+    resultElement.innerHTML += "<br>Luvuista " + number1 + ", " + number2 + " ja " + number3 + " suurin on " + Math.max(number1, number2, number3);
 
     // random()
     let max = 11;
@@ -33,31 +33,31 @@ function printMathExamples() {
     resultElement.innerHTML += "<br>Satunnaisluku: " + randomNumber;
     resultElement.innerHTML += "<br>Satunnaisluku2: " + randomNumber2;
     // pow()
-    resultElement.innerHTML += "<br>Luku " + inputElement1Value + " potenssiin kaksi on " + Math.pow(inputElement1Value, 2);
+    resultElement.innerHTML += "<br>Luku " + number1 + " potenssiin kaksi on " + Math.pow(number1, 2);
     // sqrt()
-    resultElement.innerHTML += "<br>Luvun " + inputElement1Value + " neliöjuuri on " + Math.sqrt(inputElement1Value);
+    resultElement.innerHTML += "<br>Luvun " + number1 + " neliöjuuri on " + Math.sqrt(number1);
 
 }
 
-function printStringExamples() {
+function printStringExamples(inputText) {
     /**
      * STRING
      */
 
     // length
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " pituus on " + inputElement2Value.length;
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " pituus on " + inputText.length;
     // slice(), substr()
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " ensimmäiset viisi kirjainta ovat " + inputElement2Value.slice(0, 5);
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " ensimmäiset viisi kirjainta ovat " + inputElement2Value.substring(0, 5);
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " ensimmäiset viisi kirjainta ovat " + inputText.slice(0, 5);
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " ensimmäiset viisi kirjainta ovat " + inputText.substring(0, 5);
     // replace()
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " a:t korvattuna e:llä " + inputElement2Value.replace("a", "e");
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " a:t korvattuna e:llä " + inputText.replace("a", "e");
     // toUpperCase(), toLowerCase()
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " uppercasena " + inputElement2Value.toUpperCase();
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " lowercasena " + inputElement2Value.toLowerCase();
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " uppercasena " + inputText.toUpperCase();
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " lowercasena " + inputText.toLowerCase();
     // trim()
 
     // charAt()
-    resultElement.innerHTML += "<br>Merkkijonon " + inputElement2Value + " kuudes kirjain on " + inputElement2Value.charAt(5);
+    resultElement.innerHTML += "<br>Merkkijonon " + inputText + " kuudes kirjain on " + inputText.charAt(5);
 }
 // Käsitellään painikkeen klikkaus
 document.getElementById("testButton").onclick = function() {
@@ -66,5 +66,11 @@ document.getElementById("testButton").onclick = function() {
     let inputElement2Value = document.getElementById("inputElement2").value;
     let inputElement3Value = document.getElementById("inputElement3").value;
     
-    
+    // Kutsutaan matikkaesimerkkifunktiota
+    printMathExamples(inputElement1Value, inputElement2Value, inputElement3Value);
+
+    // Kutsutaan stringesimerkkifunktiota
+    printStringExamples(inputElement2Value);
+    printStringExamples(inputElement1Value);
+    printStringExamples(inputElement3Value);
 }
