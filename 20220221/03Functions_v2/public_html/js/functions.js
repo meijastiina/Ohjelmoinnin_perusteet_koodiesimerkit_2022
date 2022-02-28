@@ -56,10 +56,18 @@ Lue säde (radius) input-elementistä (radius1). Laske ympyrän pinta-ala ja pii
 elementteihin c_around ja c_area. Pyöristä tulokset kokonaisluvuiksi tulostettaessa.
 Ympyrän piiri lasketaan: 2 * PI * radius, Pin arvon saat Math-luokasta komennolla Math.PI.
 Ympyrän pinta-ala lasketaan: PI * radius2. Potenssiin korottaminen tehdään Math-luokan
-funktiolla Math.pow(number, power). Aseta sopiva muuttuja number-muuttujan paikalle (siis
-säde) ja power-muuttujan paika
+funktiolla Math.pow(number, power). Aseta sopiva muuttuja number-muuttujan paikalle (siis säde) ja power-muuttujan paika
 */
 function f01() {           
+    // Lue säde (radius) input-elementistä (radius1).
+    let radius = Number(document.getElementById("radius1").value);
+
+    // Ympyrän piiri lasketaan: 2 * PI * radius, Pin arvon saat Math-luokasta komennolla Math.PI.
+    let circleAround = 2 * Math.PI * radius;
+
+    // Tulosta tulokset elementteihin c_around 
+    document.getElementById("c_around").innerHTML = circleAround;
+    // ja c_area. 
 
 }
 
