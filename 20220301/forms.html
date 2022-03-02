@@ -10,10 +10,10 @@
 <body>
     <form action="">
         <div>
-            <label for="firstname">First name</label><input type="text" id="firstname" name="firstname">
+            <label for="firstname">First name</label><input type="text" id="firstname" name="firstname" required>
         </div>
         <div>
-            <label for="lastname">Last name</label><input type="text" id="lastname" name="lastname" required>
+            <label for="lastname">Last name</label><input type="text" id="lastname" name="lastname">
         </div>
         <div>
             <label for="gender">Gender</label>
@@ -24,17 +24,17 @@
             </select>
         </div>
         <div>
-            <label for="conditions">Accept conditions</label><input type="checkbox" name="conditions" id="conditions">
+            <label for="conditions">Accept conditions</label><input type="checkbox" name="conditions" id="conditions" value="Accept">
         </div>
         <div>
             <fieldset>
                 <legend>Join mailing list</legend>
-                <label for="mailingListYes">Yes</label><input type="radio" name="mailingList" id="mailingListYes">
-                <label for="mailingListNo">No</label><input type="radio" name="mailingList" id="mailingListNo">
+                <label for="mailingListYes">Yes</label><input type="radio" name="mailingList" id="mailingListYes" value="yes">
+                <label for="mailingListNo">No</label><input type="radio" name="mailingList" id="mailingListNo" value="no">
             </fieldset>
         </div>
         <div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submitButton" disabled>Submit</button>
             <button type="reset">Reset</button>
         </div>
     </form>
