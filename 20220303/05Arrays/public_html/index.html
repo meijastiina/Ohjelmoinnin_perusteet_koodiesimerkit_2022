@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" >
+        <meta content="Liisa Auer" name="author">
+        <meta name="description" content="Programming exercises">        
+    </head>
+    <body>
+        <main id="page">
+            <h1>Array exercises </h1>
+
+            <div>
+                <section class="inline">
+                    <h2>T1: Basic array handling</h2> 
+                    <button type="button" onclick="t01a()">Print 1</button>
+                    <p>Array: <span id="result_a1"></span><br>
+                        <span id="result_a2"></span></p>
+
+                    <button type="button" onclick="t01b()">Print 2</button>
+                    <p>Array:<br><span id="result_b"></span></p>
+
+                    <button type="button" onclick="t01c()">Sum and avg</button>
+                    <p>Sum: <span  id="result_c1"></span><br>
+                        Average: <span  id="result_c2"></span></p>
+
+                    <button type="button" onclick="t01d()">Smallest and biggest</button>
+                    <p>Smallest: <span  id="result_d1"></span><br>
+                        Biggest: <span  id="result_d2"></span></p>
+
+                    <button type="button" onclick="t01e()">Sort</button>
+                    <p>Array: <span id="result_e"></span></p>
+
+                    <button type="button" onclick="t01f()">New numbers</button>                    
+                </section>
+
+                <section class="inline">
+                    <h2>T2: Joker</h2>
+                    <button type="button" onclick="t02()">Joker</button>    
+                    <p id="joker"></p>
+
+                    <section>
+                        <h2>T3: Lotto</h2>                    
+                        <button type="button" onclick="t03()">Lotto numbers</button>
+                        <p>Lotto numbers:<br><span id="lotto"></span><br>
+                            Extra number:  <span id="extra"></span><br>
+                            Plus number:  <span id="plus"></span>
+                        </p> 
+                    </section> 
+                    <section>
+                        <h2>T4: Random order</h2>                    
+                        <button type="button" onclick="t04()">Random order</button>
+                        <p>Array:<br><span id="random"></span></p> 
+                    </section>  
+
+                </section>                
+
+                <section class="inline">
+                    <h2>T5: Dices</h2>
+                    <button type="button" onclick="t05()">Throw dices</button>
+                    <p>Dice 6 was thrown <span id="sixes"></span> times</p>
+                    <p id="dices"></p>
+                </section>
+            </div>
+        </main>
+        <script src="js/arrays.js"></script>
+    </body>
+</html>

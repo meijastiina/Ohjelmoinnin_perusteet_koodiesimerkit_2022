@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/tyylit.css" >	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">        
+
+    </head>
+    <body>
+        <div id="page" style="display: none;">
+            <h1>Array exercises </h1>
+
+            <div>
+                <section>
+                    <h2>T1: Basic array handling</h2> 
+                    <button onclick="t01a()">Print 1</button>
+                    <p>Array: <span id="result_a1"></span><br>
+                    <span id="result_a2"></span></p>
+
+                    <button onclick="t01b()">Print 2</button>
+                    <p>Array:<br><span id="result_b"></span></p>
+
+                    <button onclick="t01c()">Sum and avg</button>
+                    <p>Sum: <span  id="result_c1"></span><br>
+                    Average: <span  id="result_c2"></span></p>
+                    
+                    <button onclick="t01d()">Smallest and biggest</button>
+                    <p>Smallest: <span  id="result_d1"></span><br>
+                    Biggest: <span  id="result_d2"></span></p>
+
+                    <button onclick="t01e()">Sort</button>
+                    <p>Array: <span id="result_e"></span></p>
+
+                    <button onclick="t01f()">New numbers</button>                    
+                </section>
+
+                <section>
+                    <h2>T2: Joker</h2>
+                    <button onclick="t02()">Joker</button>    
+                    <p id="joker"></p>
+                </section>                
+
+                <section>
+                    <h2>T3: Lotto</h2>                    
+                    <button onclick="t03()">Lotto numbers</button>
+                    <p>Lotto numbers:<br><span id="lotto"></span><br>
+                       Extra number:  <span id="extra"></span><br>
+                       Plus number:  <span id="plus"></span>
+                    </p> 
+                </section>                        
+
+                <section>
+                    <h2>T4: Random order</h2>                    
+                    <button onclick="t04()">Random order</button>
+                    <p>Array:<br><span id="random"></span></p> 
+                </section>  
+                
+                <section class="inline">
+                    <h2>T5: Dices</h2>
+                    <button type="button" onclick="t05()">Throw dices</button>
+                    <p>Dice 6 was thrown <span id="sixes"></span> times</p>
+                    <p id="dices"></p>
+                </section>                
+            </div>
+        </div>
+        <div>
+                <p id="nimix"></p>
+        </div> 
+        
+        <script src="../public_html/js/arrays.js"></script>        	
+        <script src="lib/jquery-3.4.1.min.js" type="text/javascript"></script>
+        
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+        
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/arrays_tests.js"></script>        
+
+    </body>
+</html>
+
